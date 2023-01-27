@@ -1,22 +1,37 @@
-Welcome to Lumache's documentation!
-===================================
+=================================
+Tonomy ID SDK
+=================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This Tonomy ID SDK is used in the Tonomy ID to manage all business logic, cryptography and interactions with other entities. It is also used to integrate Tonomy ID into applications (this will likely be a separate package in the future)
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Installation
+------------
 
-.. note::
+Install from `nmp registry` using `npm <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>`_, a
+package manager for javascript.
 
-   This project is under active development.
+.. code-block:: bash
 
-Contents
---------
+    npm install @tonomy/tonomy-id-sdk
+
+Compatibility
+------------
+
+The SDK has been tested with nodejs v16.4.1+.
+
+Sample Applications
+------------
+Applications that illustrate how to use the SDK:
+
+    1. application 1
+    2. application 2 
+
+Contents:
+
+:ref:`Keyword Index <genindex>`, :ref:`Search Page <search>`
 
 .. toctree::
+   :maxdepth: 2
+   :caption: 
 
-   usage
-   api
+   Using the SDK
