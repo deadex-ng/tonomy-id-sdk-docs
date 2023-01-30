@@ -34,4 +34,4 @@ Contents:
    :maxdepth: 2
    :caption: 
 
-   usage
+   usage.rst
