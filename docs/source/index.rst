@@ -26,12 +26,10 @@ Applications that illustrate how to use the SDK:
     1. application 1
     2. application 2 
 
-Contents:
-
-:ref:`Keyword Index <genindex>`, :ref:`Search Page <search>`
+Contents
+--------
 
 .. toctree::
    :maxdepth: 2
-   :caption: 
 
-   Using the SDK
+   usage

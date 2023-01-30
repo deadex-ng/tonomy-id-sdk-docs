@@ -1,34 +1,30 @@
-Usage
-=====
+Using the SDK
+=============
 
-.. _installation:
+Login
+--------------
 
-Installation
-------------
+To login to an application with the TonomyID using `Single Sign-On <https://en.wikipedia.org/wiki/Single_sign-on>`_.
 
-To use Lumache, first install it using pip:
+To use the SDK, first import it:
 
-.. code-block:: console
+.. code-block:: typescript
 
-   (.venv) $ pip install lumache
+    import { UserApps, setSettings } from '@tonomy/tonomy-id-sdk';
 
-Creating recipes
-----------------
+    ...
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+    async function onButtonPress() {
+        setSettings({ ssoWebsiteOrigin: "https://tonomy-id-staging.tonomy.foundation" });
 
-.. autofunction:: lumache.get_random_ingredients
+        UserApps.onPressLogin({ callbackPath: '/callback' });
+    }
+    
+We can call the function ``onButtonPress()`` in the login implementation:
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+.. code-block:: html
 
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+    <button className="btn" onClick={onButtonPress}>
+        Login with Tonomy ID
+    </button>
+   
