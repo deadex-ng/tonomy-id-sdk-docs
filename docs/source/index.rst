@@ -26,9 +26,11 @@ Applications that illustrate how to use the SDK:
     1. application 1
     2. application 2 
 
+Contents
+--------
 
 .. toctree::
-   :maxdepth: 1
-   :caption: 
+   :maxdepth: 2
 
-   usage.rst
+   usage
+   api
