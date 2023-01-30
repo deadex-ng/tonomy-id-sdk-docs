@@ -1,16 +1,24 @@
-Usage
-=====
+Using the SDK
+=============
 
-.. _installation:
+Login
+--------------
 
-Installation
-------------
+To login to an application with the TonomyID using Single Sign-On `Single Sign-On <https://en.wikipedia.org/wiki/Single_sign-on>`_.
 
 To use Lumache, first install it using pip:
 
-.. code-block:: console
+.. code-block:: javascript
 
-   (.venv) $ pip install lumache
+import { UserApps, setSettings } from '@tonomy/tonomy-id-sdk';
+
+...
+
+async function onButtonPress() {
+    setSettings({ ssoWebsiteOrigin: "https://tonomy-id-staging.tonomy.foundation" });
+
+    UserApps.onPressLogin({ callbackPath: '/callback' });
+}
 
 Creating recipes
 ----------------
