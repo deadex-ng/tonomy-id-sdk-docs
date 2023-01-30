@@ -4,7 +4,7 @@ Using the SDK
 Login
 --------------
 
-To login to an application with the TonomyID using Single Sign-On `Single Sign-On <https://en.wikipedia.org/wiki/Single_sign-on>`_.
+To login to an application with the TonomyID using `Single Sign-On <https://en.wikipedia.org/wiki/Single_sign-on>`_.
 
 To use the SDK, first import it:
 
